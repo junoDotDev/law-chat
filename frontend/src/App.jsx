@@ -1,8 +1,13 @@
+import Header from "./components/Header"
+
 function App() {
 	return (
-		<div>
-			<h1 class="text-3xl text-red-400 font-bold">My App</h1>
-		</div>
+		<>
+			<Header />
+			<div className="bg-dilg-yellow p-6">
+				<h1 className="text-dilg-red text-3xl font-bold">My App</h1>
+			</div>
+		</>
 	)
 }
 

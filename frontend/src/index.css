@@ -1,1 +1,14 @@
+@import url("https://fonts.googleapis.com/css2?family=Montserrat:wght@100..900&display=swap");
 @import "tailwindcss";
+
+@theme {
+	--color-dilg-yellow: #ffde15;
+	--color-dilg-red: #c9282d;
+	--color-dilg-blue: #002c76;
+}
+
+* {
+	margin: 0;
+	padding: 0;
+	font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
+}
