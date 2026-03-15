@@ -1,6 +1,14 @@
-import Header from "./components/Header"
+import { useState } from "react"
+import LoginPage from "./auth/pages/LoginPage"
+import Header from "./components/layout/Header"
 
 function App() {
+	const [currentPage, setCurrentPage] = useState("login")
+
+	if (currentPage === "login") {
+		return <LoginPage onLogin={() => setCurrentPage("app")} />
+	}
+
 	return (
 		<>
 			<Header />
