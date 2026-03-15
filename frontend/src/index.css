@@ -10,3 +10,7 @@
 * {
 	font-family: "Montserrat", Tahoma, Geneva, Verdana, sans-serif;
 }
+
+button{
+	@apply cursor-pointer transition-transform duration-200 ease-out hover:scale-105 active:scale-95;
+}

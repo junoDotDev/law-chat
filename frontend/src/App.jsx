@@ -1,6 +1,6 @@
 import { useState } from "react"
 import LoginPage from "./auth/pages/LoginPage"
-import Header from "./components/layout/Header"
+import Chat from "./pages/Chat"
 
 function App() {
 	const [currentPage, setCurrentPage] = useState("login")
@@ -9,14 +9,7 @@ function App() {
 		return <LoginPage onLogin={() => setCurrentPage("app")} />
 	}
 
-	return (
-		<>
-			<Header />
-			<div className="bg-dilg-yellow p-6">
-				<h1 className="text-dilg-red text-3xl font-bold">My App</h1>
-			</div>
-		</>
-	)
+	return <Chat />
 }
 
 export default App
